@@ -68,7 +68,7 @@ figcaption {
 /* for container queries, landmarks as containers */
 body > :is(header, footer),
 main {
-  container-type: inline-size;
+  /*container-type: inline-size;*/
   grid-template-columns: 1fr minmax(max-content, 50%) 1fr;
   grid-template-rows: 10rem repeat(4, 1fr) auto;
 }
@@ -232,4 +232,51 @@ article {
        column-gap: normal;
      justify-content: space-between;
 } 
+/**** butuon color ****/
+#btn1 {
+  background-color: var(--clr-flower);
+}
 
+#btn2 {
+  background-color: var(--clr-edible);
+}
+
+#btn3 {
+  background-color: var(--clr-green);
+}
+
+#btn4 {
+  background-color: var(--clr-sunloving);
+}
+
+#btn5 {
+  background-color: var(--clr-easy);
+}
+
+#btn6 {
+  background-color: var(--clr-decorative);
+}
+
+#btn7 {
+  background-color: var(--clr-colorful);
+}
+
+#btn8 {
+  background-color: var(--clr-robust);
+}
+
+#btn9 {
+  background-color: var(--clr-air);
+}
+
+#btn10 {
+  background-color: var(--clr-fragrant);
+}
+
+#btn11 {
+  background-color: var(--clr-fast);
+}
+
+#btn12 {
+  background-color: var(--clr-green-200);
+}
