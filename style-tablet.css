@@ -1,0 +1,111 @@
+
+
+ /* Small Tablets */ 
+@media (min-width: 321px)and (max-width: 767px) {
+   
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+   }
+
+  .images {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 10px solid white;
+    border-radius: 0px;
+   }
+
+  .card-footer{
+    text-align: end;
+    grid-template-rows: auto;
+     img {
+         width: 32px;
+         height: 32px;
+         display: flex;
+         pointer-events: initial;
+         height: auto;
+       }
+       h6 {
+   
+        font-weight: var(--fw-700);
+       }
+    }
+
+  .card {
+    background-color: rgb(251, 248, 248);
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: start;    
+  
+      h3 {  
+       
+         margin-bottom: 8px;
+       }
+     
+      p { 
+         
+         color: #0f0101; 
+       }
+       img {
+        grid-column: span 4;
+        max-width: 100%;
+    }
+}   
+ 
+/* Mobile */
+@media (min-width: 320px)and (max-width: 375px) {
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+      }
+
+    .images {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        border: 10px solid white;
+        border-radius: 0px;
+       }
+
+    .card-footer{
+        text-align: end;
+        grid-template-rows: auto;
+         img {
+             width: 32px;
+             height: 32px;
+             display: flex;
+             pointer-events: initial;
+             height: auto;
+         }
+       }
+
+    .card {
+        background-color: rgb(251, 248, 248);
+        padding: 6px;
+        border: 1px solid #ddd;
+        border-radius: 0px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: start;    
+        grid-column: span 1;
+       
+          h3 {  
+             font-size: clamp(1.2rem, 2vw, 1.5rem); 
+              margin-bottom: 8px;
+         }
+         
+          p { 
+              font-size: clamp(1rem, 1.5vw, 1.2rem); 
+              color: #0f0101; 
+         }
+     }
+}
