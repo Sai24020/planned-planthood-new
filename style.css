@@ -181,7 +181,6 @@ a {
   text-decoration: none;
   color: var(--clr-accent);
   
-
   &:hover,
   &:focus-visible {
     color: var(--clr-primary-light-1);
@@ -201,12 +200,10 @@ body {
     color: var(--clr-primary-dark);
   }
 }
-
+/***varje card i article för att fixa design ***/
 article {
   display: grid;
   grid-auto-flow: column;
- 
- /* grid-template-columns:  repeat(4, 1fr);*/
   grid-template-areas:
     'img'
     'header'
@@ -217,7 +214,6 @@ article {
     /***Cards  style****/
 .cards-container {
   display: grid;
-
   gap: 1rem;
   margin-left: 20%;
   margin-right: 20%;
@@ -226,13 +222,14 @@ article {
 }
 }
 
-  #card-foot {
-       align-content: end;
-       justify-content: start;
-       column-gap: normal;
-     justify-content: space-between;
+#card-foot {
+    align-content: end;
+    justify-content: start;
+    column-gap: normal;
+    justify-content: space-between;
 } 
-/**** butuon color ****/
+
+/**** button color ****/
 #btn1 {
   background-color: var(--clr-flower);
 }

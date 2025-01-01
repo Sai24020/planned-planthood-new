@@ -1,4 +1,83 @@
+/**** Nav items och icon och title i header och fixa nav-items hover och vissa i Mobile-Small Tablet storlek "SVG för hamburgar-icon"****/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.center-section {
+  display: flex;
+  justify-content: center;
+}
 
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.nav-icon {
+  width: 40px; /* Anpassa bildens bredd */
+  height: 40px; /* Anpassa bildens höjd */
+  margin-right: 10px;
+}
+
+.nav-icon {
+  margin-right: 10px;
+}
+
+.nav-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-items li {
+  margin: 0 10px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: var(--clr-accent);
+  line-height: 0.9;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-items a:hover {
+  &:hover,
+  &:focus-visible {
+    text-decoration: none;
+    background-color: var(--clr-accent);
+    color: white;
+    font-weight:  var(--fw-700);
+  }
+  /*border-radius: 5px;*/
+}
+
+.menu-icon {
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+}
+.menu-icon svg {
+  fill: var(--clr-accent);
+  width: 24px;
+  height: 24px;
+}
+.menu-icon svg:hover,
+.menu-icon svg:focus-visible {
+    background-color: var(--clr-accent);
+    fill: white; /*byta färg vit för hambrgare icon**/
+}
 
  /* Small Tablets */ 
 @media (min-width: 321px)and (max-width: 767px) {
@@ -57,10 +136,34 @@
         grid-column: span 4;
         max-width: 100%;
     }
-}   
+}  
+.nav-items {
+  display: none; /* Göm menyn på mindre skärmar */
+  flex-direction: column;
+  position: absolute; 
+  text-align: end;
+  justify-content: space-between;
+  text-decoration: none;
+  background-color: rgb(201, 203, 206); /*Grey färy på mindre skärmar */
+  transition: background-color 0.3s ease;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  gap: 0.5rem;
+}
+
+#menu-icon {
+  fill: rgb(87, 143, 84);
+  width: 34px;
+  height: 34px;
+  display: block;
+  cursor: pointer;
+ 
+} 
+}
  
 /* Mobile */
-@media (min-width: 320px)and (max-width: 375px) {
+@media (min-width: 120px)and (max-width: 375px) {
 
     .cards-container {
         display: grid;
@@ -108,4 +211,30 @@
               color: #0f0101; 
          }
      }
+    
+    #menu-icon {
+      width: 34px;
+      height: 34px;
+      display: block;
+      cursor: pointer;
+    } 
+    .header {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+    }
+    .nav-items {
+      display: none; /* Göm menyn på mindre skärmar */
+      flex-direction: column;
+      position: absolute; 
+      text-align: end;
+      justify-content: space-between;
+      text-decoration: none;
+      background-color: rgb(201, 203, 206); /*Grey färy på mindre skärmar */
+      transition: background-color 0.3s ease;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 5px;
+      gap: 0.5rem;
+  } 
 }
