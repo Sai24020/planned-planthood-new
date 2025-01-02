@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="style-tablet.css" />
     <title>Planned Planthood</title>
   </head>
-  <body>
-    <header class="header flex-row">
+<body>
+<header class="header flex-row">        <!--*** HEADER - header **background-color är white**Part Header ****-->
       <nav class="nav-header flex-row">
         <div class="header-img">
         <svg width="214" height="210" viewBox="0 0 214 210" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +49,7 @@
           <div class="right-section">
       <div class="menu-icon" id="menu-icon">
             <!--SVG för hamburgar-->
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 24 24" fill="white">
               <rect x="3" y="6" width="18" height="2" />
               <rect x="3" y="11" width="18" height="2" />
               <rect x="3" y="16" width="18" height="2" />
@@ -56,10 +57,9 @@
           </div>
         </div>
         </nav>
-    
-    </header>
+</header>                               <!--*** End Part Header ****-->
 
-<main class="container">
+<main class="container">          <!--*** First MAIN - CONTAINER-item-1 **background-color är GREY**Part Ett ****-->
 
   <div class="item1 flex-column" style="align-items: center;">
     <h2>Uppskattade växter</h2>
@@ -72,24 +72,23 @@
       <img src="assets/images/9.jpg" />
       <img src="assets/images/12.jpg" />
       <img src="assets/images/2.jpg" />
-
-      <div>
    </div>
   </div>
-</main>
+</main>                                       <!--*** END MAIN - CONTAINER-item-1 ****Part Ett ****-->
 
-   <main class="item flex-row">
+<main class="item flex-row">           <!--*** first MAIN - ITEM-1 **background-color är White**Part Två ****-->
     <div calss="flex-column" style="text-align: start; justify-content: end; width: 250px;">
     <h3>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!
     </h3>
     <form>
-    <input type="email" id="email" name="email" placeholder="email" required>
+    <input type="email" id="email" name="email" placeholder="email@domain.com" required>
     <button>SKICKA</button></form>
   </div>
     <img src="assets/images/icon-planting.svg" style="width: 6rem; height:9rem; background-color: var(--clr-accent); margin-top: 10px; margin-bottom: 10px; border-radius: 50%;" />
-  </main>
 
-<main class="main">
+</main>                                <!--*** END MAIN - ITEM-1 ****Part Två ***-->
+
+<main class="main">             <!--*** first MAIN - MAIN ** cards-container **background-color är GREY**Part Tre ****-->
   <div class="cards-container">
 
       <article class="card">
@@ -335,49 +334,54 @@
       </article>
   
 </div>
-</main>
+</main>                          <!--*** END MAIN -  MAIN ** cards-container ** Part Tre ****-->
 
-<main class="item flex-row">
+<main class="item flex-row" style="align-items: center;">        <!--*** First MAIN - ITEM **background-color är white**part fyra ****-->
  
     <img src="assets/images/icon-seedling.svg" style="width: 6rem; height:9rem; background-color: var(--clr-accent); margin-top: 10px; margin-bottom: 10px; border-radius: 50%;" />
-    <div class="left flex-column">
-    <h3>Våra tidigare odlingar</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?
-</p>
-<button>SKICKA</button>
-</div>
+    <div class="item__text flex-column" style="align-items: center;">
+      <h3>Våra tidigare odlingar</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Aspernatur ratione quia eos pariatur deserunt veritatis.
+      Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum,
+      dolor distinctio nam quaerat doloribus?
+      </p>
+      <button class="item__btn" style="align-items: center;">SKICKA</button>
+      </div>
+</main>                                         <!--*** END MAIN - ITEM ****part fyra ****-->
 
-</main>
-<div class="item1 flex-column">
+<main class="item1 flex-column">         <!--*** First MAIN - ITEM-1 **background-color är GREY**part fem ****-->
 
-</div>
+</main>                   <!--*** END MAIN - ITEM-1 ****part fem ****-->
   
-  <footer class="footer">
-    <div class="flex-row">
-
-  
-        <section>
-            <h4 style="padding-top: 6rem;">Planterade plantor</h4>
-        <address style="width: 700px; padding-right: 10rem; padding-bottom: 2rem;">
-          <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
-          <h5>Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga. </h5>
-            <h5 style="padding-bottom: 0.5rem;">Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</h5>
-            <div style="padding-left: 0.5rem; padding-right: 10rem; display:inline-flex;">
-              <img src="assets/images/icon-phone.svg" />
-              <a href="#" style="padding-left: 1rem;">Telefon: 020-1234567</a>
-            </div>
-
-             <div  class="flex-row" style=" padding-right: 10rem;">
-            <img src="assets/images/icon-email.svg" />
-          <h5 style="padding-right: 10rem;"> info@plannedplant.com </h5>
-        </div>
+<footer class="footer flex-row">   <!--*** FOOTER - footer **background-color är green**Part Footer ****-->
+    <div class="footer__info-nav flex-row">
+        <section class="footer-info" id="footer-info">
+            <div class="footer-img" style="margin-top: 3rem;">
+            <img src="assets/images/logo.svg" />
+              <h4 style="padding-left: 1rem;">Planterade plantor</h4>
+            </div>     
+        <address>
+              <div class="footer-text">
+                 <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga.
+                  Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</h5>
+               </div>
+               <div class="img1">
+                 <img src="assets/images/icon-phone.svg" />
+                 <a href="#">Telefon: 020-1234567</a>
+               </div>
+               <div  class="img2">
+                 <img src="assets/images/icon-email.svg" />
+                 <a> info@plannedplant.com </a>
+               </div>
         </address>
         </section>
     
-        <section>
+        <section class="footer-nav" id="footer-nav">
             
         <div class="nav-footer">
-          <ul class="flex-column">
+          <ul class="flex-column" style="margin-top: -9rem;">
             <a href="#">HEM</a>
             <a href="#">HISTORIK</a>
             <a href="#">TIPS</a>
@@ -388,8 +392,9 @@
         </section>
     
     </div>
+</footer>                     <!--*** End Part Footer ****-->
+                             <!--*** Java Script för fixa Menu-part ****-->
+        <script src="script.js"></script>
 
-</footer>
-<script src="script.js"></script>
   </body>
 </html>

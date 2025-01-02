@@ -125,6 +125,7 @@
 
 /*layout-home page*/
 .site-hero__heading {
+  /*  display: none;*/
     position: absolute;
     left: -10000px;
     top: auto;
@@ -132,9 +133,13 @@
     height: 1px;
     overflow: hidden;
 }
-.site-hero .home-about {
-    display: none;
+.home-about__btn {
+    grid-column: 4 / -4;
 }
+.site-hero .home-about {
+    display: block;
+}
+
 
 .main > .home-about {
     display: block;
@@ -164,7 +169,7 @@
 
 @media (width >= 600px) {
     .site-hero__slogan {
-        grid-row: 1 / 4;
+        grid-row: 1 / 2;
     }
     .site-hero .home-about {
         display: block;
